@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it" data-lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maurice Bellanova | R A G A Z Z A C L A N</title>
+  <meta name="description" content="Portfolio artistico — residenze, sculture, musica">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav__logo">Maurice Bellanova<span class="nav__logo-sub">R A G A Z Z A C L A N</span></a>
+    <ul class="nav__links-desktop" id="navLinksDesktop">
+      <li><a href="#home" data-nav="home">Home</a></li>
+      <li><a href="#residencies" data-nav="residencies">Residenze</a></li>
+      <li><a href="#sculptures" data-nav="sculptures">Sculture</a></li>
+      <li><a href="#music" data-nav="music">Musica</a></li>
+      <li><a href="#contacts" data-nav="contacts">Contatti</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Side Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__backdrop" id="menuBackdrop"></div>
+    <div class="mobile-menu__panel">
+      <button class="mobile-menu__close" id="menuClose" aria-label="Chiudi menu">&times;</button>
+      <ul class="mobile-menu__links" id="mobileMenuLinks">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#residencies" data-nav="residencies">Residenze</a></li>
+        <li><a href="#sculptures" data-nav="sculptures">Sculture</a></li>
+        <li><a href="#music" data-nav="music">Musica</a></li>
+        <li><a href="#contacts" data-nav="contacts">Contatti</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Background Music Player -->
+  <div class="music-player" id="musicPlayer">
+    <button class="music-player__toggle" id="musicToggle" aria-label="Toggle music">
+      <svg class="music-player__icon music-player__icon--play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="5 3 19 12 5 21 5 3"/>
+      </svg>
+      <svg class="music-player__icon music-player__icon--pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+        <line x1="6" y1="4" x2="6" y2="20"/><line x1="18" y1="4" x2="18" y2="20"/>
+      </svg>
+    </button>
+    <span class="music-player__title" id="musicTitle">—</span>
+  </div>
+
+  <!-- ============ PAGE: HOME ============ -->
+  <div class="page active" id="page-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__video-wrap">
+        <video class="hero__video" id="heroVideo" autoplay muted loop playsinline>
+          <source src="" type="video/mp4" id="heroVideoSource">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title" id="heroTitle">Maurice Bellanova</h1>
+        <p class="hero__subtitle" id="heroSubtitle">R A G A Z Z A C L A N</p>
+        <p class="hero__tagline" id="heroTagline"></p>
+      </div>
+      <div class="hero__scroll">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About (on home) -->
+    <section class="section home-about">
+      <div class="about__content" id="homeAboutContent"></div>
+    </section>
+
+    <!-- Shortcuts -->
+    <section class="section home-shortcuts">
+      <div class="shortcuts" id="homeShortcuts"></div>
+    </section>
+
+  </div>
+
+  <!-- ============ PAGE: RESIDENCIES ============ -->
+  <div class="page" id="page-residencies">
+    <div class="page__hero-bar">
+      <h2 class="page__title" id="residenciesTitle"></h2>
+      <p class="page__description" id="residenciesDesc"></p>
+    </div>
+    <section class="section">
+      <div class="grid" id="residenciesGrid"></div>
+    </section>
+  </div>
+
+  <!-- ============ PAGE: SCULPTURES ============ -->
+  <div class="page" id="page-sculptures">
+    <div class="page__hero-bar">
+      <h2 class="page__title" id="sculpturesTitle"></h2>
+      <p class="page__description" id="sculpturesDesc"></p>
+    </div>
+    <section class="section">
+      <div class="gallery" id="sculpturesGallery"></div>
+    </section>
+  </div>
+
+  <!-- ============ PAGE: MUSIC ============ -->
+  <div class="page" id="page-music">
+    <div class="page__hero-bar">
+      <h2 class="page__title" id="musicSectionTitle"></h2>
+      <p class="page__description" id="musicDesc"></p>
+    </div>
+    <section class="section">
+      <div class="music-links" id="musicLinks"></div>
+      <div id="albumsGrid"></div>
+    </section>
+  </div>
+
+  <!-- ============ PAGE: CONTACTS ============ -->
+  <div class="page" id="page-contacts">
+    <div class="page__hero-bar">
+      <h2 class="page__title" id="contactsTitle"></h2>
+    </div>
+    <section class="section">
+      <div class="contacts__content" id="contactsContent"></div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__copy-wrap">
+        <p class="footer__copy">&copy; <span id="footerYear"></span> Maurice Bellanova</p>
+        <p class="footer__agency">&copy; 2026 website by <a href="https://nebulosagency.com" target="_blank" rel="noopener">Nebulos Agency</a></p>
+      </div>
+      <div class="footer__links" id="footerLinks"></div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <button class="lightbox__prev" aria-label="Previous">&lsaquo;</button>
+    <button class="lightbox__next" aria-label="Next">&rsaquo;</button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+  </div>
+
+  <audio id="bgAudio" preload="none"></audio>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

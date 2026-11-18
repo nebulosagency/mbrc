@@ -472,6 +472,7 @@
   "shortcuts": {
     "residencies": "assets/images/cave-primitive/IMG_4624.jpg",
     "sculptures": "assets/images/ragazzaclan/r0004767.jpg",
+    "performance": "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.22.jpeg",
     "music": "assets/images/ragazzaclan/dsc_0283.jpg"
   },
   "about": {
@@ -492,10 +493,10 @@
   },
   "theme": {
     "colors": {
-      "bg": "#0b0415",
-      "bgCard": "#170202",
-      "text": "#ede8e0",
-      "textMuted": "#8a8580",
+      "bg": "#f8f5f0",
+      "bgCard": "#ffffff",
+      "text": "#1f1c18",
+      "textMuted": "#7a746d",
       "accent": "#c9a84c"
     },
     "fontBody": "Source Sans 3",

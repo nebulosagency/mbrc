@@ -209,6 +209,7 @@
     const shortcuts = [
       { page: 'cave-primitive', label: cpLabel, desc: t(content.residencies.sectionDescription), img: images.residencies || images['cave-primitive'] },
       { page: 'sculptures', label: navData.sculptures, desc: t(content.sculptures.sectionDescription), img: images.sculptures },
+      { page: 'performance', label: navData.performance, desc: t(content.performance.sectionDescription), img: images.performance },
       { page: 'music', label: navData.music, desc: t(content.music.sectionDescription), img: images.music }
     ];
 
@@ -331,11 +332,13 @@
       if (hasImages) {
         const imgCount = item.images.length;
         el.innerHTML = `
-          <img src="${esc(item.images[0])}" alt="${esc(t(item.title))}" data-gallery="${esc(item.id)}" data-index="0" loading="lazy">
-          ${imgCount > 1 ? `<span class="gallery__count">+${imgCount - 1}</span>` : ''}
-          <div class="gallery__info">
-            <h3>${esc(t(item.title))}</h3>
-            <p>${esc(item.year)}${item.materials ? ' · ' + esc(t(item.materials)) : ''}${item.dimensions ? ' · ' + esc(item.dimensions) : ''}</p>
+          <div class="gallery__img-wrap">
+            <img src="${esc(item.images[0])}" alt="${esc(t(item.title))}" data-gallery="${esc(item.id)}" data-index="0" loading="lazy">
+            ${imgCount > 1 ? `<span class="gallery__count">+${imgCount - 1}</span>` : ''}
+            <div class="gallery__title-overlay"><h3>${esc(t(item.title))}</h3></div>
+          </div>
+          <div class="gallery__details">
+            <p class="gallery__meta">${esc(item.year)}${item.materials ? ' · ' + esc(t(item.materials)) : ''}${item.dimensions ? ' · ' + esc(item.dimensions) : ''}</p>
             ${t(item.description) ? `<p class="gallery__desc">${esc(t(item.description))}</p>` : ''}
           </div>`;
         item.images.slice(1).forEach((img, idx) => {

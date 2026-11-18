@@ -37,7 +37,7 @@
 
   function getPageFromHash() {
     const hash = location.hash.replace('#', '') || 'home';
-    const valid = ['home', 'residencies', 'sculptures', 'music', 'contacts'];
+    const valid = ['home', 'cave-primitive', 'sculptures', 'performance', 'music', 'email'];
     return valid.includes(hash) ? hash : 'home';
   }
 
@@ -122,16 +122,28 @@
     if (theme.fontDisplay) root.setProperty('--font-display', "'" + theme.fontDisplay + "', Georgia, serif");
   }
 
+  // ── Banner ──
+  function applyBanner() {
+    const img = content.site.bannerImage;
+    if (!img) return;
+    $$('.page__hero-bar').forEach((bar) => {
+      bar.style.backgroundImage = `url('${img}')`;
+      bar.classList.add('page__hero-bar--bg');
+    });
+  }
+
   // ── Render ──
   function render() {
     applyTheme();
+    applyBanner();
     renderHero();
     renderHomeAbout();
     renderHomeShortcuts();
-    renderResidencies();
+    renderCavePrimitive();
     renderSculptures();
+    renderPerformance();
     renderMusic();
-    renderContacts();
+    renderEmail();
     renderFooter();
     updateNavLabels();
   }
@@ -191,8 +203,9 @@
   function renderHomeShortcuts() {
     const navData = content.nav[lang] || content.nav.it;
     const images = content.shortcuts || {};
+    const cpLabel = navData['cave-primitive'] || 'Cave Primitive';
     const shortcuts = [
-      { page: 'residencies', label: navData.residencies, desc: t(content.residencies.sectionDescription), img: images.residencies },
+      { page: 'cave-primitive', label: cpLabel, desc: t(content.residencies.sectionDescription), img: images.residencies || images['cave-primitive'] },
       { page: 'sculptures', label: navData.sculptures, desc: t(content.sculptures.sectionDescription), img: images.sculptures },
       { page: 'music', label: navData.music, desc: t(content.music.sectionDescription), img: images.music }
     ];
@@ -207,23 +220,17 @@
       </a>`).join('');
   }
 
-  // ── Residencies ──
-  function renderResidencies() {
+  // ── Cave Primitive (ex Residencies) ──
+  function renderCavePrimitive() {
     const data = content.residencies;
-    $('#residenciesTitle').textContent = t(data.sectionTitle);
-    $('#residenciesDesc').textContent = t(data.sectionDescription);
+    $('#cavePrimitiveTitle').textContent = t(data.sectionTitle);
+    $('#cavePrimitiveDesc').textContent = t(data.sectionDescription);
 
-    const heroBar = $('#page-residencies .page__hero-bar');
-    if (data.headerImage) {
-      heroBar.style.backgroundImage = `url('${data.headerImage}')`;
-      heroBar.classList.add('page__hero-bar--bg');
-    }
-
-    const grid = $('#residenciesGrid');
+    const grid = $('#cavePrimitiveGrid');
     grid.innerHTML = '';
 
     if (!data.items || data.items.length === 0) {
-      grid.innerHTML = emptyMsg('residencies');
+      grid.innerHTML = emptyMsg('cave-primitive');
       return;
     }
 
@@ -251,11 +258,9 @@
       card.innerHTML = `
         ${hasImages ? slideshowHtml : '<div class="card__media card__media--placeholder"><span>IMG</span></div>'}
         <div class="card__body">
-          <span class="card__badge card__badge--inline">${esc(t(item.roleLabel))}</span>
           <h3 class="card__title">${esc(t(item.title))}</h3>
           <p class="card__meta">${esc(item.date)} — ${esc(item.location)}</p>
           <p class="card__text">${esc(t(item.description))}</p>
-          ${item.video ? `<div style="margin-top:1rem"><video controls style="width:100%;border-radius:2px" preload="metadata"><source src="${esc(item.video)}" type="video/mp4"></video></div>` : ''}
         </div>`;
       grid.appendChild(card);
 
@@ -318,20 +323,25 @@
 
     data.items.forEach((item) => {
       const hasImages = item.images && item.images.length > 0;
-      const el = document.createElement('div');
-      el.className = `gallery__item fade-in ${!hasImages ? 'gallery__item--placeholder' : ''}`;
-
       if (hasImages) {
-        el.innerHTML = `
-          <img src="${esc(item.images[0])}" alt="${esc(t(item.title))}" data-gallery="${esc(item.id)}" data-index="0" loading="lazy">
-          <div class="gallery__info">
-            <h3>${esc(t(item.title))}</h3>
-            <p>${esc(item.year)}${item.materials ? ' · ' + esc(t(item.materials)) : ''}${item.dimensions ? ' · ' + esc(item.dimensions) : ''}</p>
-          </div>`;
+        item.images.forEach((img, idx) => {
+          const el = document.createElement('div');
+          el.className = 'gallery__item fade-in';
+          const hasInfo = t(item.title) || item.year;
+          el.innerHTML = `
+            <img src="${esc(img)}" alt="${esc(t(item.title))}" data-gallery="${esc(item.id)}" data-index="${idx}" loading="lazy">
+            ${hasInfo ? `<div class="gallery__info">
+              <h3>${esc(t(item.title))}</h3>
+              <p>${esc(item.year)}${item.materials ? ' · ' + esc(t(item.materials)) : ''}${item.dimensions ? ' · ' + esc(item.dimensions) : ''}</p>
+            </div>` : ''}`;
+          gallery.appendChild(el);
+        });
       } else {
+        const el = document.createElement('div');
+        el.className = 'gallery__item fade-in gallery__item--placeholder';
         el.innerHTML = `<span>IMG</span><span>${esc(t(item.title))}</span><span style="font-size:0.7rem">${esc(item.year)}</span>`;
+        gallery.appendChild(el);
       }
-      gallery.appendChild(el);
     });
     observeFadeIns();
   }
@@ -339,48 +349,66 @@
   // ── Music ──
   function renderMusic() {
     const data = content.music;
-    const social = content.site.socialLinks || {};
     $('#musicSectionTitle').textContent = t(data.sectionTitle);
     $('#musicDesc').textContent = t(data.sectionDescription);
 
-    
-
     const grid = $('#albumsGrid');
     grid.innerHTML = '';
-    if (!data.albums || data.albums.length === 0) {
+
+    // Albums
+    if (data.albums && data.albums.length > 0) {
+      const albumsSection = document.createElement('div');
+      albumsSection.className = 'music-category';
+      albumsSection.innerHTML = `<h3 class="music-category__title">Albums</h3>`;
+      const albumsWrap = document.createElement('div');
+      albumsWrap.className = 'albums-catalog';
+      data.albums.forEach((album) => albumsWrap.appendChild(createAlbumCard(album)));
+      albumsSection.appendChild(albumsWrap);
+      grid.appendChild(albumsSection);
+    }
+
+    // Live Sets
+    if (data.liveSets && data.liveSets.length > 0) {
+      const liveSection = document.createElement('div');
+      liveSection.className = 'music-category';
+      liveSection.innerHTML = `<h3 class="music-category__title">Live Set</h3>`;
+      data.liveSets.forEach((item) => {
+        const el = document.createElement('div');
+        el.className = 'music-embed fade-in';
+        el.innerHTML = `
+          <h4 class="music-embed__title">${esc(item.title)}</h4>
+          ${item.soundcloudUrl ? `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(item.soundcloudUrl)}&color=%23c9a84c&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>` : ''}`;
+        liveSection.appendChild(el);
+      });
+      grid.appendChild(liveSection);
+    }
+
+    // Radio
+    if (data.radio && data.radio.length > 0) {
+      const radioSection = document.createElement('div');
+      radioSection.className = 'music-category';
+      radioSection.innerHTML = `<h3 class="music-category__title">Radio</h3>`;
+      data.radio.forEach((item) => {
+        const el = document.createElement('div');
+        el.className = 'music-embed fade-in';
+        el.innerHTML = `
+          <h4 class="music-embed__title">${esc(item.title)}</h4>
+          ${item.soundcloudUrl ? `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(item.soundcloudUrl)}&color=%23c9a84c&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>` : ''}`;
+        radioSection.appendChild(el);
+      });
+      grid.appendChild(radioSection);
+    }
+
+    if (!grid.children.length) {
       grid.innerHTML = emptyMsg('music');
-      return;
-    }
-
-    const featured = data.albums.filter((a) => a.featured);
-    const rest = data.albums.filter((a) => !a.featured);
-
-    if (featured.length > 0) {
-      const featWrap = document.createElement('div');
-      featWrap.className = 'albums-featured';
-      featured.forEach((album) => featWrap.appendChild(createAlbumCard(album, true)));
-      grid.appendChild(featWrap);
-    }
-
-    if (rest.length > 0) {
-      if (featured.length > 0) {
-        const sep = document.createElement('div');
-        sep.className = 'albums-separator';
-        sep.innerHTML = `<span>${lang === 'it' ? 'Catalogo' : 'Catalog'}</span>`;
-        grid.appendChild(sep);
-      }
-      const restWrap = document.createElement('div');
-      restWrap.className = 'albums-catalog';
-      rest.forEach((album) => restWrap.appendChild(createAlbumCard(album, false)));
-      grid.appendChild(restWrap);
     }
 
     observeFadeIns();
   }
 
-  function createAlbumCard(album, isFeatured) {
+  function createAlbumCard(album) {
     const el = document.createElement('article');
-    el.className = `album fade-in ${isFeatured ? 'album--featured' : ''}`;
+    el.className = 'album fade-in';
     const typeLabel = album.type === 'single' ? 'Single' : 'Album';
     const artistLine = album.artist ? `<p class="album__artist">${esc(album.artist)}</p>` : '';
     el.innerHTML = `
@@ -405,14 +433,65 @@
     return el;
   }
 
-  // ── Contacts ──
-  function renderContacts() {
+  // ── Performance ──
+  function renderPerformance() {
+    const data = content.performance || {};
+    $('#performanceTitle').textContent = t(data.sectionTitle || { it: 'Performance', en: 'Performance' });
+    $('#performanceDesc').textContent = t(data.sectionDescription || { it: '', en: '' });
+
+    const grid = $('#performanceGrid');
+    grid.innerHTML = '';
+
+    if (!data.items || data.items.length === 0) {
+      grid.innerHTML = emptyMsg('performance');
+      return;
+    }
+
+    data.items.forEach((item) => {
+      const card = document.createElement('article');
+      card.className = 'card card--wide fade-in';
+      const hasImages = item.images && item.images.length > 0;
+
+      let slideshowHtml = '';
+      if (hasImages) {
+        slideshowHtml = `
+          <div class="slideshow" data-gallery="${esc(item.id)}">
+            <div class="slideshow__track">
+              ${item.images.map((img, i) => `<div class="slideshow__slide ${i === 0 ? 'slideshow__slide--active' : ''}"><img src="${esc(img)}" alt="${esc(t(item.title))} ${i + 1}" data-gallery="${esc(item.id)}" data-index="${i}" loading="lazy"></div>`).join('')}
+            </div>
+            ${item.images.length > 1 ? `
+              <button class="slideshow__nav slideshow__nav--prev" aria-label="Precedente">&lsaquo;</button>
+              <button class="slideshow__nav slideshow__nav--next" aria-label="Successiva">&rsaquo;</button>
+              <div class="slideshow__dots">
+                ${item.images.map((_, i) => `<span class="slideshow__dot ${i === 0 ? 'slideshow__dot--active' : ''}" data-index="${i}"></span>`).join('')}
+              </div>` : ''}
+          </div>`;
+      }
+
+      card.innerHTML = `
+        ${hasImages ? slideshowHtml : '<div class="card__media card__media--placeholder"><span>IMG</span></div>'}
+        <div class="card__body">
+          <h3 class="card__title">${esc(t(item.title))}</h3>
+          ${item.date ? `<p class="card__meta">${esc(item.date)}${item.location ? ' — ' + esc(item.location) : ''}</p>` : ''}
+          <p class="card__text">${esc(t(item.description))}</p>
+        </div>`;
+      grid.appendChild(card);
+
+      if (hasImages && item.images.length > 1) {
+        initSlideshow(card.querySelector('.slideshow'));
+      }
+    });
+    observeFadeIns();
+  }
+
+  // ── Email (ex Contacts) ──
+  function renderEmail() {
     const data = content.about;
     const social = content.site.socialLinks || {};
     const navData = content.nav[lang] || content.nav.it;
-    $('#contactsTitle').textContent = navData.contacts;
+    $('#emailTitle').textContent = navData.email || 'Email';
 
-    const wrap = $('#contactsContent');
+    const wrap = $('#emailContent');
     let html = '<div class="contacts__grid">';
 
     html += '<div class="contacts__block">';
@@ -548,9 +627,10 @@
 
   function emptyMsg(section) {
     const msgs = {
-      residencies: { it: 'Nessuna residenza ancora.', en: 'No residencies yet.' },
+      'cave-primitive': { it: 'Nessuna residenza ancora.', en: 'No residencies yet.' },
       sculptures: { it: 'Nessuna scultura ancora.', en: 'No sculptures yet.' },
-      music: { it: 'Nessun album ancora.', en: 'No albums yet.' }
+      performance: { it: 'Nessuna performance ancora.', en: 'No performances yet.' },
+      music: { it: 'Nessun contenuto musicale ancora.', en: 'No music content yet.' }
     };
     const m = msgs[section] || { it: '', en: '' };
     return `<p style="color:var(--text-muted);text-align:center;grid-column:1/-1">${m[lang] || m.it}</p>`;

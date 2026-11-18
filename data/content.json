@@ -2,11 +2,12 @@
   "site": {
     "title": "Maurice Bellanova | R A G A Z Z A C L A N",
     "description": {
-      "it": "Portfolio artistico — residenze, sculture, musica",
-      "en": "Artistic portfolio — residencies, sculptures, music"
+      "it": "Portfolio artistico — scultura, performance, musica",
+      "en": "Artistic portfolio — sculpture, performance, music"
     },
     "defaultLang": "en",
     "backgroundVideo": "assets/videos/ragazzaclan-bg.mp4",
+    "bannerImage": "multimedia/banner orizzontale.jpeg",
     "socialLinks": {
       "bandcamp": "https://ragazzaclan.bandcamp.com",
       "soundcloud": "https://soundcloud.com/ragazzaclan",
@@ -17,58 +18,131 @@
   "nav": {
     "it": {
       "home": "Home",
-      "residencies": "Residenze",
+      "cave-primitive": "Cave Primitive",
       "sculptures": "Sculture",
+      "performance": "Performance",
       "music": "Musica",
-      "contacts": "Contatti"
+      "email": "Email"
     },
     "en": {
       "home": "Home",
-      "residencies": "Residencies",
+      "cave-primitive": "Cave Primitive",
       "sculptures": "Sculptures",
+      "performance": "Performance",
       "music": "Music",
-      "contacts": "Contacts"
+      "email": "Email"
     }
   },
   "hero": {
     "title": "Maurice Bellanova",
     "subtitle": "R A G A Z Z A C L A N",
     "tagline": {
-      "it": "Artista multidisciplinare — scultura, residenze, suono",
-      "en": "Multidisciplinary artist — sculpture, residencies, sound"
+      "it": "Artista multidisciplinare — scultura, performance, suono",
+      "en": "Multidisciplinary artist — sculpture, performance, sound"
     }
+  },
+  "performance": {
+    "sectionTitle": {
+      "it": "Performance",
+      "en": "Performance"
+    },
+    "sectionDescription": {
+      "it": "",
+      "en": ""
+    },
+    "items": [
+      {
+        "id": "perf-sacramento",
+        "title": {
+          "it": "Sacramento",
+          "en": "Sacramento"
+        },
+        "date": "2023 - 2026",
+        "location": "",
+        "description": {
+          "it": "",
+          "en": ""
+        },
+        "images": [
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.22.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (4).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (4).jpeg"
+        ]
+      },
+      {
+        "id": "perf-bologna",
+        "title": {
+          "it": "No WiFi",
+          "en": "No WiFi"
+        },
+        "date": "",
+        "location": "Bologna",
+        "description": {
+          "it": "",
+          "en": ""
+        },
+        "images": [
+          "multimedia/bologna performance/WhatsApp Image 2026-11-16 at 11.50.11.jpeg",
+          "multimedia/bologna performance/WhatsApp Image 2026-11-16 at 11.50.11 (1).jpeg",
+          "multimedia/bologna performance/WhatsApp Image 2026-11-16 at 11.50.11 (2).jpeg"
+        ]
+      }
+    ]
   },
   "residencies": {
     "sectionTitle": {
-      "it": "Residenze Artistiche",
-      "en": "Artistic Residencies"
+      "it": "Cave Primitive",
+      "en": "Cave Primitive"
     },
     "sectionDescription": {
-      "it": "Progetti di residenza artistica organizzati e partecipati.",
-      "en": "Artistic residency projects organized and participated in."
+      "it": "Progetto artistico e culturale indipendente — residenze d'artista, produzione creativa e ricerca interdisciplinare.",
+      "en": "Independent artistic and cultural project — artist residencies, creative production and interdisciplinary research."
     },
     "items": [
       {
         "id": "cave-primitive",
         "title": {
-          "it": "Cave Primitive",
-          "en": "Cave Primitive"
+          "it": "Primitivo Futuro",
+          "en": "Primitive Future"
         },
-        "role": "organizer",
-        "roleLabel": {
-          "it": "Organizzatore",
-          "en": "Organizer"
-        },
-        "date": "2024",
-        "location": "Italia",
+        "date": "2021 - 2027",
+        "location": "South Italy",
         "description": {
-          "it": "Residenza artistica Cave Primitive",
-          "en": "Cave Primitive artistic residency"
+          "it": "Residenza collettiva per l'arte contemporanea",
+          "en": "Communal residency for contemporary art"
         },
         "images": [
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.50.jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.51.jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.51 (1).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.51 (2).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.52.jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.52 (1).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53.jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (3).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (4).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (5).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (6).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (7).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (8).jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.54.jpeg",
+          "multimedia/WhatsApp Image 2026-11-16 at 11.38.54 (5).jpeg",
           "assets/images/cave-primitive/IMG_4624.jpg",
-          "assets/images/cave-primitive/IMG_4625.jpg",
-          "assets/images/cave-primitive/IMG_4626.jpg",
           "assets/images/cave-primitive/IMG_4627.jpg",
           "assets/images/cave-primitive/IMG_4628.jpg",
           "assets/images/cave-primitive/IMG_3939 2.jpg",
@@ -76,14 +150,16 @@
           "assets/images/cave-primitive/IMG_3941 2.jpg",
           "assets/images/cave-primitive/IMG_3942 2.jpg",
           "assets/images/cave-primitive/IMG_3945 2.jpg",
-          "assets/images/cave-primitive/IMG_3947 2.jpg",
           "assets/images/cave-primitive/IMG_3949 2.jpg",
-          "assets/images/cave-primitive/IMG_3950 2.jpg"
-        ],
-        "video": ""
+          "assets/images/cave-primitive/IMG_3950 2.jpg",
+          "multimedia/fantasmagoria/fanta6.jpg",
+          "multimedia/fantasmagoria/fanta4.jpg",
+          "multimedia/fantasmagoria/fanta2.jpeg",
+          "multimedia/cura_festival/cura1.jpeg"
+        ]
       }
     ],
-    "headerImage": ""
+    "headerImage": "multimedia/conv.jpeg"
   },
   "sculptures": {
     "sectionTitle": {
@@ -96,132 +172,146 @@
     },
     "items": [
       {
-        "id": "scu-001",
+        "id": "scu-1795017143885",
         "title": {
-          "it": "Scultura esempio",
-          "en": "Example Sculpture"
+          "it": "Archeologia dell'istinto",
+          "en": "Archeologia dell'istinto"
         },
         "year": "2024",
         "materials": {
-          "it": "Materiali misti",
-          "en": "Mixed materials"
+          "it": "argilla bianca ",
+          "en": ""
         },
         "dimensions": "",
         "description": {
-          "it": "Modifica dal pannello admin.",
-          "en": "Edit from the admin panel."
+          "it": "Realizzata a mano",
+          "en": ""
         },
         "images": [
-          "assets/images/scultura/1.jpg"
-        ],
-        "video": ""
+          "multimedia/sculture/WhatsApp Image 2026-11-16 at 11.41.50 (2).jpeg"
+        ]
+      },
+      {
+        "id": "scu-nuove-01",
+        "title": {
+          "it": "archi pres on for  NOI rinc ia aume capi genaume vita potap  ta vi ma è for sopra perder  stupor  dinn io he  È",
+          "en": "archi pres on for  NOI rinc ia aume capi genaume vita potap  ta vi ma è for sopra perder  stupor  dinn io he  È"
+        },
+        "year": "2025",
+        "materials": {
+          "it": "ceramica bianca cotta",
+          "en": "fired white ceramic"
+        },
+        "dimensions": "",
+        "description": {
+          "it": "Realizzata durante la performance Sacramento - Garage Noord, Amsterdam",
+          "en": "Realized during the performance Sacramento - Garage Noord, Amsterdam"
+        },
+        "images": [
+          "multimedia/sculture/WhatsApp Image 2026-11-16 at 11.41.49.jpeg",
+          "multimedia/sculture/WhatsApp Image 2026-11-16 at 11.41.50.jpeg",
+          "multimedia/sculture/WhatsApp Image 2026-11-16 at 11.41.50 (1).jpeg"
+        ]
       },
       {
         "id": "scu-1794741355149",
         "title": {
-          "it": "Pannello",
-          "en": "Panel"
+          "it": "Futurarca",
+          "en": "Futurarca"
         },
-        "year": "",
+        "year": "2026",
         "materials": {
-          "it": "",
+          "it": "argilla chiara e argilla scura cotta",
           "en": ""
         },
-        "dimensions": "",
+        "dimensions": "A3",
         "description": {
-          "it": "",
-          "en": ""
+          "it": "Tela realizzata in ceramica serigrafata con barbottina nera",
+          "en": "Tela realizzata in ceramica serigrafata con barbottina nera"
         },
         "images": [
           "assets/images/scultura/2.jpg"
-        ],
-        "video": ""
-      },
-      {
-        "id": "scu-1794741381705",
-        "title": {
-          "it": "forma",
-          "en": "form"
-        },
-        "year": "",
-        "materials": {
-          "it": "",
-          "en": ""
-        },
-        "dimensions": "",
-        "description": {
-          "it": "",
-          "en": ""
-        },
-        "images": [
-          "assets/images/scultura/3.jpg"
-        ],
-        "video": ""
-      },
-      {
-        "id": "scu-1794741395019",
-        "title": {
-          "it": "Bolide",
-          "en": "Bolid"
-        },
-        "year": "",
-        "materials": {
-          "it": "",
-          "en": ""
-        },
-        "dimensions": "",
-        "description": {
-          "it": "",
-          "en": ""
-        },
-        "images": [
-          "assets/images/scultura/4.jpg"
-        ],
-        "video": ""
+        ]
       },
       {
         "id": "scu-1794741410383",
         "title": {
-          "it": "Maschera",
-          "en": "Mask"
+          "it": "A ritual of bodies refusing to surrender",
+          "en": "A ritual of bodies refusing to surrender"
         },
-        "year": "",
+        "year": "2026",
         "materials": {
-          "it": "",
+          "it": "ceramica bianca e colore engobbio",
           "en": ""
         },
         "dimensions": "",
         "description": {
-          "it": "",
+          "it": "Tela in ceramica disegnata con il dremel e dipinta a mano ",
           "en": ""
         },
         "images": [
           "assets/images/scultura/5.jpg"
-        ],
-        "video": ""
+        ]
       },
       {
-        "id": "scu-1794741429907",
+        "id": "scu-1794741381705",
         "title": {
-          "it": "Tavola",
-          "en": "Table"
+          "it": "Creature in divenire",
+          "en": "Creature in divenire"
         },
-        "year": "",
+        "year": "2026",
         "materials": {
-          "it": "",
+          "it": "argilla bianca e cenere",
           "en": ""
         },
         "dimensions": "",
         "description": {
-          "it": "",
+          "it": "Realizzata a mano usando textures sperimentali e disegnata con il dremel",
           "en": ""
         },
         "images": [
-          "assets/images/scultura/6.jpg",
-          "assets/images/scultura/7.jpg",
-          "assets/images/scultura/8.jpg"
-        ],
-        "video": ""
+          "assets/images/scultura/3.jpg"
+        ]
+      },
+      {
+        "id": "scu-001",
+        "title": {
+          "it": "Anatomia dell'ignoto",
+          "en": "Anatomia dell'ignoto"
+        },
+        "year": "2026",
+        "materials": {
+          "it": "ceramica bianca e pannello in acciaio",
+          "en": "ceramica bianca e pannello in acciaio"
+        },
+        "dimensions": "",
+        "description": {
+          "it": "Lampada realizzata a mano su un ausilio in acciaio disegnato con saldatura a elettrodo",
+          "en": "Lampada realizzata a mano su un ausilio in acciaio disegnato con saldatura a elettrodo"
+        },
+        "images": [
+          "multimedia/sculture/exam.jpeg"
+        ]
+      },
+      {
+        "id": "scu-1794741395019",
+        "title": {
+          "it": "Sputacchiera",
+          "en": "Bolid"
+        },
+        "year": "2026",
+        "materials": {
+          "it": "argilla bianca",
+          "en": ""
+        },
+        "dimensions": "",
+        "description": {
+          "it": "Realizzata a mano attraverso la tecnica a colombino",
+          "en": ""
+        },
+        "images": [
+          "assets/images/scultura/4.jpg"
+        ]
       }
     ]
   },
@@ -231,38 +321,15 @@
       "en": "Music"
     },
     "sectionDescription": {
-      "it": "Album e produzioni musicali.",
-      "en": "Albums and music productions."
+      "it": "Album, live set e produzioni musicali.",
+      "en": "Albums, live sets and music productions."
     },
     "albums": [
-      {
-        "id": "cartavelina",
-        "title": "Cartavelina",
-        "type": "single",
-        "year": "2026",
-        "featured": false,
-        "cover": "assets/images/covers/cartavelina.jpg",
-        "description": {
-          "it": "Racconta emozioni che si piegano, si rompono e continuano comunque a vivere tra le note.",
-          "en": "Tells of emotions that bend, break, and keep living through the notes."
-        },
-        "tracks": [
-          {
-            "title": "Cartavelina",
-            "duration": ""
-          }
-        ],
-        "bandcampUrl": "https://ragazzaclan.bandcamp.com/track/cartavelina",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
-        "artist": ""
-      },
       {
         "id": "non-primary-line",
         "title": "Non primary-line",
         "type": "album",
         "year": "2026",
-        "featured": false,
         "cover": "assets/images/covers/non-primary-line.jpg",
         "description": {
           "it": "Non sogniamo il futuro. Ci spostiamo di realtà. Non è l'errore. È la via che il sistema non ottimizza.",
@@ -307,120 +374,31 @@
           }
         ],
         "bandcampUrl": "https://ragazzaclan.bandcamp.com/album/non-primary-line",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
+        "soundcloudUrl": "",
         "artist": ""
       },
       {
-        "id": "ombra-digitale",
-        "title": "Ombra digitale",
-        "type": "single",
-        "year": "2025",
-        "featured": false,
-        "cover": "assets/images/covers/ombra-digitale.jpg",
-        "description": {
-          "it": "Evoca un paesaggio sonoro dove il confine tra macchina e spirito si dissolve.",
-          "en": "Evokes a soundscape where the boundary between machine and spirit dissolves."
-        },
-        "tracks": [
-          {
-            "title": "Ombra digitale",
-            "duration": ""
-          }
-        ],
-        "bandcampUrl": "https://ragazzaclan.bandcamp.com/track/ombra-digitale",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
-        "artist": ""
-      },
-      {
-        "id": "psicostato",
-        "title": "PsicoStato",
+        "id": "bubbly-creature",
+        "title": "Bubbly Creature",
         "type": "album",
-        "year": "2025",
-        "featured": false,
-        "cover": "assets/images/covers/psicostato.jpg",
+        "year": "",
+        "cover": "multimedia/Copertine album/bubbly.jpg",
         "description": {
-          "it": "Un viaggio sonoro nelle derive della psiche contemporanea.",
-          "en": "A sonic journey into the drifts of the contemporary psyche."
+          "it": "",
+          "en": ""
         },
         "tracks": [
           {
-            "title": "Allucinazione di massa",
-            "duration": "7:11"
+            "title": "Piango noise",
+            "duration": "3:51"
           },
           {
-            "title": "Wi-Fi e sangue",
-            "duration": "6:00"
-          },
-          {
-            "title": "Letto 17, requiem per un tso",
-            "duration": "3:38"
+            "title": "Morte bianca",
+            "duration": "2:47"
           }
         ],
-        "bandcampUrl": "https://ragazzaclan.bandcamp.com/album/psicostato",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
-        "artist": ""
-      },
-      {
-        "id": "braci",
-        "title": "Braci",
-        "type": "album",
-        "year": "2025",
-        "cover": "assets/images/covers/braci.jpg",
-        "artist": "Ragazzaclan & Lorenzo Travaglini",
-        "description": {
-          "it": "Un EP registrato con Lorenzo Travaglini in Bosco Studio, nell'Appennino Tosco-Romagnolo, tra pianoforte, synth modulari, drum machine, microfrequenze e legni che respirano. Braci è un incontro tra materia acustica ed elettronica.",
-          "en": "An EP recorded with Lorenzo Travaglini at Bosco Studio in the Tuscan-Romagnol Apennines, between piano, modular synths, drum machines, micro-frequencies and breathing wood. Braci is a meeting of acoustic and electronic matter."
-        },
-        "tracks": [
-          {
-            "title": "Carbon.form",
-            "duration": "25:08"
-          },
-          {
-            "title": "Cenere.mute",
-            "duration": "11:14"
-          },
-          {
-            "title": "Infr.sgnl",
-            "duration": "16:34"
-          },
-          {
-            "title": "Last.heat",
-            "duration": "15:35"
-          },
-          {
-            "title": "Assenza.loop",
-            "duration": "14:38"
-          }
-        ],
-        "bandcampUrl": "https://ragazzaclan.bandcamp.com/album/braci",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
-        "featured": false
-      },
-      {
-        "id": "xonira-exe",
-        "title": "Xonira.exe",
-        "type": "single",
-        "year": "2025",
-        "cover": "assets/images/covers/xonira-exe.jpg",
-        "description": {
-          "it": "Reverberi di un universo insonne. Voce: Gaia Bembo.",
-          "en": "Reverberations of a sleepless universe. Voice: Gaia Bembo."
-        },
-        "tracks": [
-          {
-            "title": "Xonira.exe",
-            "duration": ""
-          }
-        ],
-        "bandcampUrl": "https://ragazzaclan.bandcamp.com/track/xonira-exe",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
-        "featured": false,
+        "bandcampUrl": "https://ob-skene.bandcamp.com/album/bubbly-creature",
+        "soundcloudUrl": "",
         "artist": ""
       },
       {
@@ -430,7 +408,7 @@
         "year": "2023",
         "cover": "assets/images/covers/sacramento.jpg",
         "description": {
-          "it": "La storia va così: ti affezioni ad un posto, una persona o un oggetto, e quella profonda affezione diviene un Sacramento — una sorta di incantesimo magico che ti lega ciecamente a qualcosa.",
+          "it": "La storia va così: notarget è il rituale viscerale con ritocchi pitchati e folkclorecore - alcuni dolcissimi canti reccati nella Terra Promessa annunciano il mio personale paradiso perduto (e nella sincope del kick in Rahamani Drum puoi vedere segnali dal cielo e il risveglio improvviso che mi ha condotto fino qui-adesso).\n\nNella Valle dell’Amore, il CD-Sacramento è prodotto e imbottigliato dall’artista Greta Di Poce con resina in altorilievo",
           "en": "The story goes like this: you grow attached to a place, a person, or an object, and that deep affection becomes a Sacrament — a kind of magic spell that blindly binds you to something."
         },
         "tracks": [
@@ -456,32 +434,27 @@
           }
         ],
         "bandcampUrl": "https://ragazzaclan.bandcamp.com/album/sacramento",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
-        "featured": false,
+        "soundcloudUrl": "https://soundcloud.com/ragazzaclan/sets/sacramento",
         "artist": ""
+      }
+    ],
+    "liveSets": [
+      {
+        "id": "neurosonic",
+        "title": "Neurosonic",
+        "soundcloudUrl": "https://soundcloud.com/ragazzaclan/neurosonic"
       },
       {
-        "id": "trapdoor-pink",
-        "title": "Trapdoor pink",
-        "type": "single",
-        "year": "2021",
-        "cover": "assets/images/covers/trapdoor-pink.jpg",
-        "description": {
-          "it": "Un tuffo nella botola rosa.",
-          "en": "A dive into the pink trapdoor."
-        },
-        "tracks": [
-          {
-            "title": "Trapdoor pink",
-            "duration": ""
-          }
-        ],
-        "bandcampUrl": "https://ragazzaclan.bandcamp.com/track/trapdoor-pink",
-        "soundcloudUrl": "https://soundcloud.com/ragazzaclan",
-        "bandcampEmbed": "",
-        "featured": false,
-        "artist": ""
+        "id": "scrolling",
+        "title": "Scrolling",
+        "soundcloudUrl": "https://soundcloud.com/ragazzaclan/scrolling"
+      }
+    ],
+    "radio": [
+      {
+        "id": "abbraccio-zerogravity",
+        "title": "Abbraccio Zerogravity",
+        "soundcloudUrl": "https://soundcloud.com/rough-radio/abbraccio-zerogravity-w-1"
       }
     ]
   },
@@ -507,8 +480,8 @@
       "en": "About"
     },
     "bio": {
-      "it": "Maurice Bellanova è un artista multidisciplinare il cui lavoro attraversa scultura, residenze artistiche e produzione sonora sotto il progetto R A G A Z Z A C L A N. Modifica questa biografia dal pannello admin.",
-      "en": "Maurice Bellanova is a multidisciplinary artist whose work spans sculpture, artistic residencies, and sound production under the R A G A Z Z A C L A N project. Edit this bio from the admin panel."
+      "it": "Maurice Bellanova è un artista multidisciplinare, performer e produttore musicale. La sua pratica esplora le intersezioni tra arti visive, scultura, sperimentazione sonora e performance, indagando le relazioni tra corpo, materia, suono e spazio.\nÈ co-fondatore di Cave Primitive, un progetto artistico e culturale indipendente che unisce residenze d'artista, produzione creativa e ricerca interdisciplinare. Concepito come spazio di sperimentazione, scambio e creazione collettiva, Cave Primitive sostiene processi artistici che superano le discipline convenzionali e i formati consolidati.\nLa sua ricerca scultorea e performativa esplora forme, materiali, gesti e immaginari simbolici non convenzionali, creando situazioni in cui le dimensioni fisica, spaziale e sonora convergono.\nParallelamente alla pratica visiva e performativa, sviluppa RAGAZZACLAN, un progetto indipendente di musica e performance che esplora territori sonori ibridi e decostruiti. Il progetto combina ritmi ossessivi, tensioni tribali, glitch e atmosfere ritualistiche.\nAttraverso la produzione musicale, le performance e i live set, RAGAZZACLAN crea esperienze sonore intense e destabilizzanti, trasformando la pista da ballo in uno spazio di espressione e sperimentazione collettiva.\nIl suo lavoro si muove tra arte contemporanea, cultura underground e pratiche interdisciplinari, in una costante ricerca di forme di espressione mutanti, radicali e in evoluzione.",
+      "en": "Maurice Bellanova is a multidisciplinary artist, performer and music producer. His practice explores the intersections between visual arts, sculpture, sound experimentation and performance, investigating the relationships between body, matter, sound and space.\nHe is co-founder of Cave Primitive, an independent artistic and cultural project combining artist residencies, creative production and interdisciplinary research. Conceived as a space for experimentation, exchange and collective creation, Cave Primitive supports artistic processes that move beyond conventional disciplines and established formats.\nHis sculptural and performative research explores unconventional forms, materials, gestures and symbolic imagery, creating situations in which physical, spatial and sonic dimensions converge.\nAlongside his visual and performative practice, he develops RAGAZZACLAN, an independent music and performance project exploring hybrid and deconstructed sound territories, the project combines obsessive rhythms, tribal tensions, glitches and ritualistic atmospheres.\nThrough music production, performances and live sets, RAGAZZACLAN creates intense and destabilising sonic experiences, transforming the dancefloor into a space for collective expression and experimentation.\nHis work moves between contemporary art, underground culture and interdisciplinary practices, constantly searching for mutant, radical and evolving forms of expression."
     },
     "photo": "assets/images/ragazzaclan/3-copia.jpg",
     "contact": {

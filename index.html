@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maurice Bellanova | R A G A Z Z A C L A N</title>
-  <meta name="description" content="Portfolio artistico — residenze, sculture, musica">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'">
+  <meta name="description" content="Portfolio artistico — scultura, performance, musica">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; frame-src https://w.soundcloud.com https://bandcamp.com https://*.bandcamp.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="multimedia/logo.jpeg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,10 +19,11 @@
     <a href="#home" class="nav__logo">Maurice Bellanova<span class="nav__logo-sub">R A G A Z Z A C L A N</span></a>
     <ul class="nav__links-desktop" id="navLinksDesktop">
       <li><a href="#home" data-nav="home">Home</a></li>
-      <li><a href="#residencies" data-nav="residencies">Residenze</a></li>
+      <li><a href="#cave-primitive" data-nav="cave-primitive">Cave Primitive</a></li>
       <li><a href="#sculptures" data-nav="sculptures">Sculture</a></li>
+      <li><a href="#performance" data-nav="performance">Performance</a></li>
       <li><a href="#music" data-nav="music">Musica</a></li>
-      <li><a href="#contacts" data-nav="contacts">Contatti</a></li>
+      <li><a href="#email" data-nav="email">Email</a></li>
     </ul>
     <div class="nav__actions">
       <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
@@ -38,10 +40,11 @@
       <button class="mobile-menu__close" id="menuClose" aria-label="Chiudi menu">&times;</button>
       <ul class="mobile-menu__links" id="mobileMenuLinks">
         <li><a href="#home" data-nav="home">Home</a></li>
-        <li><a href="#residencies" data-nav="residencies">Residenze</a></li>
+        <li><a href="#cave-primitive" data-nav="cave-primitive">Cave Primitive</a></li>
         <li><a href="#sculptures" data-nav="sculptures">Sculture</a></li>
+        <li><a href="#performance" data-nav="performance">Performance</a></li>
         <li><a href="#music" data-nav="music">Musica</a></li>
-        <li><a href="#contacts" data-nav="contacts">Contatti</a></li>
+        <li><a href="#email" data-nav="email">Email</a></li>
       </ul>
     </div>
   </div>
@@ -94,14 +97,14 @@
 
   </div>
 
-  <!-- ============ PAGE: RESIDENCIES ============ -->
-  <div class="page" id="page-residencies">
+  <!-- ============ PAGE: CAVE PRIMITIVE ============ -->
+  <div class="page" id="page-cave-primitive">
     <div class="page__hero-bar">
-      <h2 class="page__title" id="residenciesTitle"></h2>
-      <p class="page__description" id="residenciesDesc"></p>
+      <h2 class="page__title" id="cavePrimitiveTitle"></h2>
+      <p class="page__description" id="cavePrimitiveDesc"></p>
     </div>
     <section class="section">
-      <div class="grid" id="residenciesGrid"></div>
+      <div class="grid" id="cavePrimitiveGrid"></div>
     </section>
   </div>
 
@@ -123,18 +126,28 @@
       <p class="page__description" id="musicDesc"></p>
     </div>
     <section class="section">
-      <div class="music-links" id="musicLinks"></div>
       <div id="albumsGrid"></div>
     </section>
   </div>
 
-  <!-- ============ PAGE: CONTACTS ============ -->
-  <div class="page" id="page-contacts">
+  <!-- ============ PAGE: PERFORMANCE ============ -->
+  <div class="page" id="page-performance">
     <div class="page__hero-bar">
-      <h2 class="page__title" id="contactsTitle"></h2>
+      <h2 class="page__title" id="performanceTitle"></h2>
+      <p class="page__description" id="performanceDesc"></p>
     </div>
     <section class="section">
-      <div class="contacts__content" id="contactsContent"></div>
+      <div class="grid" id="performanceGrid"></div>
+    </section>
+  </div>
+
+  <!-- ============ PAGE: EMAIL ============ -->
+  <div class="page" id="page-email">
+    <div class="page__hero-bar">
+      <h2 class="page__title" id="emailTitle"></h2>
+    </div>
+    <section class="section">
+      <div class="contacts__content" id="emailContent"></div>
     </section>
   </div>
 

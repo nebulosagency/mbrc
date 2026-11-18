@@ -384,7 +384,7 @@
         "year": "",
         "cover": "multimedia/Copertine album/bubbly.jpg",
         "description": {
-          "it": "",
+          "it": "Viaggio sonoro dentro spazi interiori frammentati, dove il confine tra realtà e allucinazione si dissolve. Le tracce si muovono tra paesaggi gelidi e pulsazioni distorte, creando un equilibrio instabile tra malinconia e aggressività.",
           "en": ""
         },
         "tracks": [
@@ -395,6 +395,22 @@
           {
             "title": "Morte bianca",
             "duration": "2:47"
+          },
+          {
+            "title": "Cave texture",
+            "duration": ""
+          },
+          {
+            "title": "Ghost rave",
+            "duration": "3:44"
+          },
+          {
+            "title": "Brutal",
+            "duration": "4:07"
+          },
+          {
+            "title": "Dark valley",
+            "duration": "3:47"
           }
         ],
         "bandcampUrl": "https://ob-skene.bandcamp.com/album/bubbly-creature",

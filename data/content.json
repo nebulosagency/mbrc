@@ -64,24 +64,24 @@
           "en": ""
         },
         "images": [
-          "assets/images/sacramento performance/sac1.jpeg",
-          "assets/images/sacramento performance/sac2.jpeg",
-          "assets/images/sacramento performance/sac3.jpeg",
-          "assets/images/sacramento performance/sac4.jpeg",
-          "assets/images/sacramento performance/sac5.jpeg",
-          "assets/images/sacramento performance/sac6.jpeg",
-          "assets/images/sacramento performance/sac7.jpeg",
-          "assets/images/sacramento performance/sac8.jpeg",
-          "assets/images/sacramento performance/sac9.jpeg",
-          "assets/images/sacramento performance/sac10.jpeg",
-          "assets/images/sacramento performance/sac11.jpeg",
-          "assets/images/sacramento performance/sac12.jpeg",
-          "assets/images/sacramento performance/sac13.jpeg",
-          "assets/images/sacramento performance/sac14.jpeg",
-          "assets/images/sacramento performance/sac15.jpeg",
-          "assets/images/sacramento performance/sac16.jpeg",
-          "assets/images/sacramento performance/sac17.jpeg",
-          "assets/images/sacramento performance/sac18.jpeg"
+          "assets/images/sacramento_performance/sac1.jpeg",
+          "assets/images/sacramento_performance/sac2.jpeg",
+          "assets/images/sacramento_performance/sac3.jpeg",
+          "assets/images/sacramento_performance/sac4.jpeg",
+          "assets/images/sacramento_performance/sac5.jpeg",
+          "assets/images/sacramento_performance/sac6.jpeg",
+          "assets/images/sacramento_performance/sac7.jpeg",
+          "assets/images/sacramento_performance/sac8.jpeg",
+          "assets/images/sacramento_performance/sac9.jpeg",
+          "assets/images/sacramento_performance/sac10.jpeg",
+          "assets/images/sacramento_performance/sac11.jpeg",
+          "assets/images/sacramento_performance/sac12.jpeg",
+          "assets/images/sacramento_performance/sac13.jpeg",
+          "assets/images/sacramento_performance/sac14.jpeg",
+          "assets/images/sacramento_performance/sac15.jpeg",
+          "assets/images/sacramento_performance/sac16.jpeg",
+          "assets/images/sacramento_performance/sac17.jpeg",
+          "assets/images/sacramento_performance/sac18.jpeg"
         ]
       },
       {
@@ -97,9 +97,9 @@
           "en": ""
         },
         "images": [
-          "assets/images/bologna performance/nowifi1.jpeg",
-          "assets/images/bologna performance/nowifi2.jpeg",
-          "assets/images/bologna performance/nowifi3.jpeg"
+          "assets/images/bologna_performance/nowifi1.jpeg",
+          "assets/images/bologna_performance/nowifi2.jpeg",
+          "assets/images/bologna_performance/nowifi3.jpeg"
         ]
       }
     ]

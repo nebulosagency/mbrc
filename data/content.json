@@ -64,24 +64,24 @@
           "en": ""
         },
         "images": [
-          "assets/images/sacramento performance/sac1.jpeg",
-          "assets/images/sacramento performance/sac2.jpeg",
-          "assets/images/sacramento performance/sac3.jpeg",
-          "assets/images/sacramento performance/sac4.jpeg",
-          "assets/images/sacramento performance/sac5.jpeg",
-          "assets/images/sacramento performance/sac6.jpeg",
-          "assets/images/sacramento performance/sac7.jpeg",
-          "assets/images/sacramento performance/sac8.jpeg",
-          "assets/images/sacramento performance/sac9.jpeg",
-          "assets/images/sacramento performance/sac10.jpeg",
-          "assets/images/sacramento performance/sac11.jpeg",
-          "assets/images/sacramento performance/sac12.jpeg",
-          "assets/images/sacramento performance/sac13.jpeg",
-          "assets/images/sacramento performance/sac14.jpeg",
-          "assets/images/sacramento performance/sac15.jpeg",
-          "assets/images/sacramento performance/sac16.jpeg",
-          "assets/images/sacramento performance/sac17.jpeg",
-          "assets/images/sacramento performance/sac18.jpeg"
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.22.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.23 (4).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.24 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.25 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26.jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (1).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (2).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (3).jpeg",
+          "multimedia/sacramento performance/WhatsApp Image 2026-11-16 at 11.48.26 (4).jpeg"
         ]
       },
       {
@@ -127,21 +127,21 @@
           "en": "Communal residency for contemporary art"
         },
         "images": [
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.50.jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.51.jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.51 (1).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.51 (2).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.52.jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.52 (1).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53.jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (3).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (4).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (5).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (6).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (7).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.53 (8).jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.54.jpeg",
-          "multimedia/WhatsApp Image 2026-11-16 at 11.38.54 (5).jpeg",
+          "assets/images/cave-primitive/pr1.jpeg",
+          "assets/images/cave-primitive/pr2.jpeg",
+          "assets/images/cave-primitive/pr3.jpeg",
+          "assets/images/cave-primitive/pr4.jpeg",
+          "assets/images/cave-primitive/pr5.jpeg",
+          "assets/images/cave-primitive/pr6.jpeg",
+          "assets/images/cave-primitive/pr7.jpeg",
+          "assets/images/cave-primitive/pr8.jpeg",
+          "assets/images/cave-primitive/pr9.jpeg",
+          "assets/images/cave-primitive/pr10.jpeg",
+          "assets/images/cave-primitive/pr11.jpeg",
+          "assets/images/cave-primitive/pr12.jpeg",
+          "assets/images/cave-primitive/pr13.jpeg",
+          "assets/images/cave-primitive/pr14.jpeg",
+          "assets/images/cave-primitive/pr15.jpeg",
           "assets/images/cave-primitive/IMG_4624.jpg",
           "assets/images/cave-primitive/IMG_4627.jpg",
           "assets/images/cave-primitive/IMG_4628.jpg",
@@ -152,10 +152,10 @@
           "assets/images/cave-primitive/IMG_3945 2.jpg",
           "assets/images/cave-primitive/IMG_3949 2.jpg",
           "assets/images/cave-primitive/IMG_3950 2.jpg",
-          "multimedia/fantasmagoria/fanta6.jpg",
-          "multimedia/fantasmagoria/fanta4.jpg",
-          "multimedia/fantasmagoria/fanta2.jpeg",
-          "multimedia/cura_festival/cura1.jpeg"
+          "assets/images/fantasmagoria/fanta6.jpg",
+          "assets/images/fantasmagoria/fanta4.jpg",
+          "assets/images/fantasmagoria/fanta2.jpeg",
+          "assets/images/cura_festival/cura1.jpeg"
         ]
       }
     ],
@@ -385,7 +385,7 @@
         "cover": "multimedia/Copertine album/bubbly.jpg",
         "description": {
           "it": "Viaggio sonoro dentro spazi interiori frammentati, dove il confine tra realtà e allucinazione si dissolve. Le tracce si muovono tra paesaggi gelidi e pulsazioni distorte, creando un equilibrio instabile tra malinconia e aggressività.",
-          "en": "A sonic journey into fragmented inner spaces, where the boundary between reality and hallucination dissolves. The tracks move between frigid landscapes and distorted pulsations, creating an unstable balance between melancholy and aggression."
+          "en": ""
         },
         "tracks": [
           {
@@ -398,7 +398,7 @@
           },
           {
             "title": "Cave texture",
-            "duration": "4:29"
+            "duration": ""
           },
           {
             "title": "Ghost rave",
@@ -450,7 +450,7 @@
           }
         ],
         "bandcampUrl": "https://ragazzaclan.bandcamp.com/album/sacramento",
-        "soundcloudUrl": "",
+        "soundcloudUrl": "https://soundcloud.com/ragazzaclan/sets/sacramento",
         "artist": ""
       }
     ],

@@ -460,7 +460,7 @@
   },
   "backgroundMusic": {
     "enabled": true,
-    "autoplay": false,
+    "autoplay": true,
     "volume": 0.3,
     "tracks": [
       {

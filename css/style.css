@@ -554,12 +554,12 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.3);
+  background: var(--slideshow-dot, rgba(255,255,255,0.3));
   cursor: pointer;
   transition: background 0.3s;
 }
 .slideshow__dot--active {
-  background: var(--accent);
+  background: var(--slideshow-dot-active, var(--accent));
 }
 
 /* ===== Gallery (Sculptures) ===== */
@@ -598,6 +598,24 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
 .gallery__info p {
   font-size: 0.65rem;
   color: var(--text-muted);
+}
+.gallery__count {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(10,10,10,0.7);
+  color: var(--text);
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 2px;
+  z-index: 1;
+  backdrop-filter: blur(4px);
+}
+.gallery__desc {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  margin-top: 0.3em;
+  line-height: 1.4;
 }
 .gallery__item--placeholder {
   display: flex;
@@ -787,23 +805,27 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
   opacity: 1;
 }
 .music-player__toggle {
-  width: 30px; height: 30px;
+  width: 34px; height: 34px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-dim);
-  flex-shrink: 0;
-}
-.music-player__icon { width: 14px; height: 14px; color: var(--accent); }
-.music-player__title {
-  font-size: 0.65rem;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-  max-width: 100px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  flex-shrink: 0;
+  padding: 0;
+}
+.music-player__logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.music-player--playing .music-player__toggle {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 var(--accent-dim); }
+  50% { box-shadow: 0 0 10px 4px var(--accent-dim); }
 }
 .music-player.hidden { transform: translateX(100%); opacity: 0; pointer-events: none; }
 

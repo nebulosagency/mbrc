@@ -268,29 +268,23 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
 
 /* ===== Page Hero Bar (sub-pages) ===== */
 .page__hero-bar {
-  height: 240px;
-  padding: var(--nav-h) var(--gutter) 2rem;
+  height: 200px;
+  padding: var(--nav-h) 5px 5px;
   text-align: center;
   border-bottom: 1px solid var(--border);
   background: linear-gradient(to bottom, rgba(201, 168, 76, 0.06), var(--bg));
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .page__title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   font-weight: 300;
   letter-spacing: 0.03em;
-  margin-bottom: 0.5em;
-}
-.page__title::after {
-  content: '';
-  display: block;
-  width: 40px; height: 1px;
-  background: var(--accent);
-  margin: 0.6em auto 0;
+  margin-bottom: 0.2em;
 }
 .page__hero-bar--bg {
   background-size: cover;
@@ -312,7 +306,7 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
 .page__hero-bar--bg .page__description { color: rgba(237, 232, 224, 0.7); }
 .page__description {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -957,7 +951,7 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
   .shortcuts { grid-template-columns: repeat(2, 1fr); }
   .shortcut { aspect-ratio: 16 / 9; }
   .shortcut__desc { opacity: 1; transform: none; }
-  .page__hero-bar { height: 200px; }
+  .page__hero-bar { height: 160px; }
 }
 
 @media (max-width: 480px) {

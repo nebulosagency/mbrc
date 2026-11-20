@@ -117,8 +117,6 @@
         const b = parseInt(theme.colors.accent.slice(5,7),16);
         root.setProperty('--accent-dim', `rgba(${r},${g},${b},0.15)`);
       }
-      if (theme.colors.slideshowDot) root.setProperty('--slideshow-dot', theme.colors.slideshowDot);
-      if (theme.colors.slideshowDotActive) root.setProperty('--slideshow-dot-active', theme.colors.slideshowDotActive);
     }
     if (theme.fontBody) root.setProperty('--font-body', "'" + theme.fontBody + "', 'Inter', system-ui, sans-serif");
     if (theme.fontDisplay) root.setProperty('--font-display', "'" + theme.fontDisplay + "', Georgia, serif");
@@ -209,7 +207,6 @@
     const shortcuts = [
       { page: 'cave-primitive', label: cpLabel, desc: t(content.residencies.sectionDescription), img: images.residencies || images['cave-primitive'] },
       { page: 'sculptures', label: navData.sculptures, desc: t(content.sculptures.sectionDescription), img: images.sculptures },
-      { page: 'performance', label: navData.performance, desc: t(content.performance.sectionDescription), img: images.performance },
       { page: 'music', label: navData.music, desc: t(content.music.sectionDescription), img: images.music }
     ];
 
@@ -326,37 +323,25 @@
 
     data.items.forEach((item) => {
       const hasImages = item.images && item.images.length > 0;
-      const el = document.createElement('div');
-      el.className = 'gallery__item fade-in';
-
       if (hasImages) {
-        const imgCount = item.images.length;
-        el.innerHTML = `
-          <div class="gallery__img-wrap">
-            <img src="${esc(item.images[0])}" alt="${esc(t(item.title))}" data-gallery="${esc(item.id)}" data-index="0" loading="lazy">
-            ${imgCount > 1 ? `<span class="gallery__count">+${imgCount - 1}</span>` : ''}
-            <div class="gallery__title-overlay"><h3>${esc(t(item.title))}</h3></div>
-          </div>
-          <div class="gallery__details">
-            <p class="gallery__meta">${esc(item.year)}${item.materials ? ' · ' + esc(t(item.materials)) : ''}${item.dimensions ? ' · ' + esc(item.dimensions) : ''}</p>
-            ${t(item.description) ? `<p class="gallery__desc">${esc(t(item.description))}</p>` : ''}
-          </div>`;
-        item.images.slice(1).forEach((img, idx) => {
-          const hidden = document.createElement('img');
-          hidden.src = img;
-          hidden.alt = t(item.title);
-          hidden.dataset.gallery = item.id;
-          hidden.dataset.index = idx + 1;
-          hidden.style.display = 'none';
-          hidden.loading = 'lazy';
-          el.appendChild(hidden);
+        item.images.forEach((img, idx) => {
+          const el = document.createElement('div');
+          el.className = 'gallery__item fade-in';
+          const hasInfo = t(item.title) || item.year;
+          el.innerHTML = `
+            <img src="${esc(img)}" alt="${esc(t(item.title))}" data-gallery="${esc(item.id)}" data-index="${idx}" loading="lazy">
+            ${hasInfo ? `<div class="gallery__info">
+              <h3>${esc(t(item.title))}</h3>
+              <p>${esc(item.year)}${item.materials ? ' · ' + esc(t(item.materials)) : ''}${item.dimensions ? ' · ' + esc(item.dimensions) : ''}</p>
+            </div>` : ''}`;
+          gallery.appendChild(el);
         });
       } else {
-        el.className += ' gallery__item--placeholder';
+        const el = document.createElement('div');
+        el.className = 'gallery__item fade-in gallery__item--placeholder';
         el.innerHTML = `<span>IMG</span><span>${esc(t(item.title))}</span><span style="font-size:0.7rem">${esc(item.year)}</span>`;
+        gallery.appendChild(el);
       }
-
-      gallery.appendChild(el);
     });
     observeFadeIns();
   }
@@ -541,6 +526,9 @@
   function setupMusicPlayer() {
     const audio = $('#bgAudio');
     const toggle = $('#musicToggle');
+    const iconPlay = $('.music-player__icon--play');
+    const iconPause = $('.music-player__icon--pause');
+    const titleEl = $('#musicTitle');
     const playerEl = $('#musicPlayer');
 
     const bgMusic = content.backgroundMusic;
@@ -556,51 +544,30 @@
       const track = bgMusic.tracks[i];
       audio.src = track.file;
       audio.volume = bgMusic.volume || 0.3;
-    }
-
-    function play() {
-      return audio.play().then(() => {
-        isPlaying = true;
-        playerEl.classList.add('music-player--playing');
-      }).catch(() => {});
-    }
-
-    function pause() {
-      audio.pause();
-      isPlaying = false;
-      playerEl.classList.remove('music-player--playing');
+      titleEl.textContent = track.title;
     }
 
     loadTrack(0);
 
+    // Entrance animation: slide in after a short delay
     requestAnimationFrame(() => {
       setTimeout(() => playerEl.classList.add('music-player--enter'), 600);
     });
 
     toggle.addEventListener('click', () => {
-      if (isPlaying) pause();
-      else play();
+      if (isPlaying) {
+        audio.pause();
+        isPlaying = false;
+        iconPlay.style.display = '';
+        iconPause.style.display = 'none';
+      } else {
+        audio.play().then(() => {
+          isPlaying = true;
+          iconPlay.style.display = 'none';
+          iconPause.style.display = '';
+        }).catch(() => {});
+      }
     });
-
-    if (bgMusic.autoplay) {
-      audio.play().then(() => {
-        isPlaying = true;
-        playerEl.classList.add('music-player--playing');
-      }).catch(() => {
-        function startOnInteraction() {
-          if (!isPlaying) {
-            audio.play().then(() => {
-              isPlaying = true;
-              playerEl.classList.add('music-player--playing');
-            }).catch(() => {});
-          }
-          document.removeEventListener('click', startOnInteraction);
-          document.removeEventListener('touchstart', startOnInteraction);
-        }
-        document.addEventListener('click', startOnInteraction);
-        document.addEventListener('touchstart', startOnInteraction);
-      });
-    }
 
     audio.addEventListener('ended', () => {
       trackIndex = (trackIndex + 1) % bgMusic.tracks.length;

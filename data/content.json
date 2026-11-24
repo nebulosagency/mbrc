@@ -90,11 +90,11 @@
           "it": "No WiFi",
           "en": "No WiFi"
         },
-        "date": "",
+        "date": "Bologna",
         "location": "Bologna",
         "description": {
-          "it": "",
-          "en": ""
+          "it": "2023 Hidden Garage",
+          "en": "2023 Hidden Garage"
         },
         "images": [
           "assets/images/bologna_performance/nowifi1.jpeg",
@@ -123,8 +123,8 @@
         "date": "2021 - 2027",
         "location": "South Italy",
         "description": {
-          "it": "Residenza collettiva per l'arte contemporanea",
-          "en": "Communal residency for contemporary art"
+          "it": "Residenza collettiva per l'arte contemporanea\n\n2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Tolosa\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Ginevra",
+          "en": "Communal residency for contemporary art\n\n2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Tolosa\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Ginevra"
         },
         "images": [
           "assets/images/cave-primitive/pr1.jpeg",
@@ -156,22 +156,6 @@
           "assets/images/fantasmagoria/fanta4.jpg",
           "assets/images/fantasmagoria/fanta2.jpeg",
           "assets/images/cura_festival/cura1.jpeg"
-        ]
-      },
-      {
-        "id": "festivals-residencies",
-        "title": {
-          "it": "Festival e residenze",
-          "en": "Festivals and residencies"
-        },
-        "date": "2021 - 2026",
-        "location": "",
-        "description": {
-          "it": "2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Tolosa\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Ginevra",
-          "en": "2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Toulouse\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Geneva"
-        },
-        "images": [
-          "multimedia/RAGAZZACLAN/DSC_0938.JPG"
         ]
       }
     ],
@@ -243,7 +227,7 @@
         "dimensions": "A3",
         "description": {
           "it": "Tela realizzata in ceramica serigrafata con barbottina nera",
-          "en": "Tela realizzata in ceramica serigrafata con barbottina nera"
+          "en": "Canvas made of screen-printed ceramic with black slip"
         },
         "images": [
           "assets/images/scultura/2.jpg"

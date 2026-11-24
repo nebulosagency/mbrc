@@ -263,7 +263,7 @@
         <div class="card__body">
           <h3 class="card__title">${esc(t(item.title))}</h3>
           <p class="card__meta">${esc(item.date)} — ${esc(item.location)}</p>
-          <p class="card__text">${esc(t(item.description))}</p>
+          <p class="card__text">${t(item.description).replace(/\n/g, '<br>')}</p>
         </div>`;
       grid.appendChild(card);
 
@@ -488,7 +488,7 @@
         <div class="card__body">
           <h3 class="card__title">${esc(t(item.title))}</h3>
           ${item.date ? `<p class="card__meta">${esc(item.date)}${item.location ? ' — ' + esc(item.location) : ''}</p>` : ''}
-          <p class="card__text">${esc(t(item.description))}</p>
+          <p class="card__text">${t(item.description).replace(/\n/g, '<br>')}</p>
         </div>`;
       grid.appendChild(card);
 

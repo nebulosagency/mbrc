@@ -60,8 +60,8 @@
         "date": "2023 - 2026",
         "location": "",
         "description": {
-          "it": "",
-          "en": ""
+          "it": "2023 Salotto Elettronico, Taranto\n2024 Ex Viri, Bari\n2024 Canti Magnetici, Taranto\n2024 Magica Mistica Musica, Reggio Calabria\n2024 Sottoculture, Bologna\n2024 Masseria Atipica, Bari\n2025 Cora Dance Festival, Taranto\n2025 Garage Noord, Amsterdam\n2026 Lamia Santolini, Brindisi",
+          "en": "2023 Salotto Elettronico, Taranto\n2024 Ex Viri, Bari\n2024 Canti Magnetici, Taranto\n2024 Magica Mistica Musica, Reggio Calabria\n2024 Sottoculture, Bologna\n2024 Masseria Atipica, Bari\n2025 Cora Dance Festival, Taranto\n2025 Garage Noord, Amsterdam\n2026 Lamia Santolini, Brindisi"
         },
         "images": [
           "assets/images/sacramento_performance/sac1.jpeg",
@@ -157,6 +157,21 @@
           "assets/images/fantasmagoria/fanta2.jpeg",
           "assets/images/cura_festival/cura1.jpeg"
         ]
+      }
+      ,
+      {
+        "id": "festivals-residencies",
+        "title": {
+          "it": "Festival e residenze",
+          "en": "Festivals and residencies"
+        },
+        "date": "2021 - 2026",
+        "location": "",
+        "description": {
+          "it": "2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Tolosa\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Ginevra",
+          "en": "2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Toulouse\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Geneva"
+        },
+        "images": []
       }
     ],
     "headerImage": "multimedia/conv.jpeg"
@@ -464,6 +479,21 @@
         "id": "scrolling",
         "title": "Scrolling",
         "soundcloudUrl": "https://soundcloud.com/ragazzaclan/scrolling"
+      },
+      {
+        "id": "sudora",
+        "title": "Sudora",
+        "soundcloudUrl": "https://soundcloud.com/ragazzaclan/sudora"
+      },
+      {
+        "id": "live-set-x-trullo-attack",
+        "title": "Live Set x Trullo Attack",
+        "soundcloudUrl": "https://soundcloud.com/ragazzaclan/live-set-x-trullo-attack"
+      },
+      {
+        "id": "abbraccio-zerogravity-liveset",
+        "title": "Abbraccio Zerogravity",
+        "soundcloudUrl": "https://soundcloud.com/ragazzaclan/abbraccio-zerogravity"
       }
     ],
     "radio": [
@@ -471,6 +501,11 @@
         "id": "abbraccio-zerogravity",
         "title": "Abbraccio Zerogravity",
         "soundcloudUrl": "https://soundcloud.com/rough-radio/abbraccio-zerogravity-w-1"
+      },
+      {
+        "id": "azg-jun26",
+        "title": "AZG Jun26",
+        "soundcloudUrl": "https://soundcloud.com/rough-radio/azg-jun26"
       }
     ]
   },

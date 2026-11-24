@@ -12,7 +12,7 @@
       "bandcamp": "https://ragazzaclan.bandcamp.com",
       "soundcloud": "https://soundcloud.com/ragazzaclan",
       "instagram": "https://www.instagram.com/ragazzaclan/",
-      "email": ""
+      "email": "ragazzaclan@gmail.com"
     }
   },
   "nav": {
@@ -157,8 +157,7 @@
           "assets/images/fantasmagoria/fanta2.jpeg",
           "assets/images/cura_festival/cura1.jpeg"
         ]
-      }
-      ,
+      },
       {
         "id": "festivals-residencies",
         "title": {
@@ -171,7 +170,9 @@
           "it": "2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Tolosa\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Ginevra",
           "en": "2021 Museo Carlo Zauli, Faenza\n2022 Fayda.exe., Milano\n2022 Cura Festival, Grottaglie\n2022 Jean Bender•Anna Gaïotti•William Nurdin, Toulouse\n2022 Per praticare il non utile, Bari (<a href=\"https://youtu.be/Qz0r_qeKkSU?is=u8swbrAQmn6pKWzM\" target=\"_blank\">video</a>)\n2023 Post South, Grottaglie\n2023 Sleep Concert, Grottaglie\n2023 Collective Funclub, Milano\n2024 Fantasmagoria Festival, Taranto\n2024 Canti Magnetici, Taranto\n2025 Fantasma festival, Taranto\n2026 Bise Noir, Geneva"
         },
-        "images": []
+        "images": [
+          "multimedia/RAGAZZACLAN/DSC_0938.JPG"
+        ]
       }
     ],
     "headerImage": "multimedia/conv.jpeg"
@@ -195,12 +196,12 @@
         "year": "2024",
         "materials": {
           "it": "argilla bianca ",
-          "en": ""
+          "en": "white clay"
         },
         "dimensions": "",
         "description": {
           "it": "Realizzata a mano",
-          "en": ""
+          "en": "Handmade"
         },
         "images": [
           "multimedia/sculture/WhatsApp Image 2026-11-16 at 11.41.50 (2).jpeg"
@@ -237,7 +238,7 @@
         "year": "2026",
         "materials": {
           "it": "argilla chiara e argilla scura cotta",
-          "en": ""
+          "en": "white clay and burned dark clay"
         },
         "dimensions": "A3",
         "description": {
@@ -257,12 +258,12 @@
         "year": "2026",
         "materials": {
           "it": "ceramica bianca e colore engobbio",
-          "en": ""
+          "en": "white ceramic and colored engobe"
         },
         "dimensions": "",
         "description": {
           "it": "Tela in ceramica disegnata con il dremel e dipinta a mano ",
-          "en": ""
+          "en": "Ceramic canvas, designed using a Dremel tool and hand-painted"
         },
         "images": [
           "assets/images/scultura/5.jpg"
@@ -277,12 +278,12 @@
         "year": "2026",
         "materials": {
           "it": "argilla bianca e cenere",
-          "en": ""
+          "en": "white clay and ash"
         },
         "dimensions": "",
         "description": {
           "it": "Realizzata a mano usando textures sperimentali e disegnata con il dremel",
-          "en": ""
+          "en": "Handcrafted using experimental textures and designed with a Dremel tool\n"
         },
         "images": [
           "assets/images/scultura/3.jpg"
@@ -317,12 +318,12 @@
         "year": "2026",
         "materials": {
           "it": "argilla bianca",
-          "en": ""
+          "en": "white clay"
         },
         "dimensions": "",
         "description": {
           "it": "Realizzata a mano attraverso la tecnica a colombino",
-          "en": ""
+          "en": "Handcrafted using the coiling technique"
         },
         "images": [
           "assets/images/scultura/4.jpg"
@@ -533,11 +534,11 @@
     },
     "bio": {
       "it": "Maurice Bellanova è un artista multidisciplinare, performer e produttore musicale. La sua pratica esplora le intersezioni tra arti visive, scultura, sperimentazione sonora e performance, indagando le relazioni tra corpo, materia, suono e spazio.\nÈ co-fondatore di Cave Primitive, un progetto artistico e culturale indipendente che unisce residenze d'artista, produzione creativa e ricerca interdisciplinare. Concepito come spazio di sperimentazione, scambio e creazione collettiva, Cave Primitive sostiene processi artistici che superano le discipline convenzionali e i formati consolidati.\nLa sua ricerca scultorea e performativa esplora forme, materiali, gesti e immaginari simbolici non convenzionali, creando situazioni in cui le dimensioni fisica, spaziale e sonora convergono.\nParallelamente alla pratica visiva e performativa, sviluppa RAGAZZACLAN, un progetto indipendente di musica e performance che esplora territori sonori ibridi e decostruiti. Il progetto combina ritmi ossessivi, tensioni tribali, glitch e atmosfere ritualistiche.\nAttraverso la produzione musicale, le performance e i live set, RAGAZZACLAN crea esperienze sonore intense e destabilizzanti, trasformando la pista da ballo in uno spazio di espressione e sperimentazione collettiva.\nIl suo lavoro si muove tra arte contemporanea, cultura underground e pratiche interdisciplinari, in una costante ricerca di forme di espressione mutanti, radicali e in evoluzione.",
-      "en": "Maurice Bellanova is a multidisciplinary artist, performer and music producer. His practice explores the intersections between visual arts, sculpture, sound experimentation and performance, investigating the relationships between body, matter, sound and space.\nHe is co-founder of Cave Primitive, an independent artistic and cultural project combining artist residencies, creative production and interdisciplinary research. Conceived as a space for experimentation, exchange and collective creation, Cave Primitive supports artistic processes that move beyond conventional disciplines and established formats.\nHis sculptural and performative research explores unconventional forms, materials, gestures and symbolic imagery, creating situations in which physical, spatial and sonic dimensions converge.\nAlongside his visual and performative practice, he develops RAGAZZACLAN, an independent music and performance project exploring hybrid and deconstructed sound territories, the project combines obsessive rhythms, tribal tensions, glitches and ritualistic atmospheres.\nThrough music production, performances and live sets, RAGAZZACLAN creates intense and destabilising sonic experiences, transforming the dancefloor into a space for collective expression and experimentation.\nHis work moves between contemporary art, underground culture and interdisciplinary practices, constantly searching for mutant, radical and evolving forms of expression."
+      "en": "Maurice Bellanova is a multidisciplinary artist, performer and music producer. He holds a degree in Psychological Sciences and Techniques and a Master's degree in Contemporary Ceramics. His practice unfolds through an interdisciplinary investigation spanning visual arts, sculpture, sound experimentation and performative practices, with a particular focus on the relationships between body, matter, sound and space.\n\nHe is co-founder of Cave Primitive, an independent cultural research and production initiative integrating artist residencies, interdisciplinary projects and experimental artistic processes. Conceived as a platform for exchange, research and collective production, Cave Primitive fosters artistic practices that challenge disciplinary boundaries and established expressive paradigms.\n\nHis sculptural and performative research focuses on the exploration of formal configurations, material processes, gestures and systems of symbolic representation. Through the use of heterogeneous materials and languages, he develops expressive frameworks in which physical, spatial and acoustic dimensions interact and continuously redefine one another. His background in psychology and ceramics provides an additional field of inquiry, informing his investigation into perceptual phenomena, behavioural dynamics, the relationship between subject and matter, and processes of symbolic construction.\n\nAlongside his visual and performative research, he develops Ragazzaclan, an independent music and performance project operating within the realms of hybrid sound, rhythmic deconstruction and electronic experimentation. Its sonic language is characterised by the interplay of obsessive rhythmic structures, tribal tensions, glitch interference and ritualistic atmospheres.\n\nThrough music production and live performances, investigates the potential of sound as a perceptual and collective medium, reconfiguring the performance space and the dancefloor as sites of interaction, expression and experimentation.\n\nHis practice occupies an intersection between contemporary art, underground cultures and interdisciplinary research, continuously seeking to develop hybrid, radical and evolving forms of artistic expression."
     },
     "photo": "assets/images/ragazzaclan/3-copia.jpg",
     "contact": {
-      "email": "",
+      "email": "ragazzaclan@gmail.com",
       "instagram": "https://instagram.com/ragazzaclan",
       "website": ""
     }

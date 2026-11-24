@@ -90,7 +90,7 @@
           "it": "No WiFi",
           "en": "No WiFi"
         },
-        "date": "Bologna",
+        "date": "",
         "location": "Bologna",
         "description": {
           "it": "2023 Hidden Garage",
@@ -472,7 +472,7 @@
       },
       {
         "id": "live-set-x-trullo-attack",
-        "title": "Live Set x Trullo Attack",
+        "title": "Specchio infranto",
         "soundcloudUrl": "https://soundcloud.com/ragazzaclan/live-set-x-trullo-attack"
       },
       {
@@ -485,7 +485,7 @@
       {
         "id": "abbraccio-zerogravity",
         "title": "Abbraccio Zerogravity",
-        "soundcloudUrl": "https://soundcloud.com/rough-radio/abbraccio-zerogravity-w-1"
+        "youtubeUrl": "https://www.youtube.com/live/4DRHQpjqIRA?is=XgLLgvglGbRsyj8Y"
       },
       {
         "id": "azg-jun26",

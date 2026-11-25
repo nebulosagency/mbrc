@@ -392,7 +392,7 @@
         el.className = 'music-embed fade-in';
         el.innerHTML = `
           <h4 class="music-embed__title">${esc(item.title)}</h4>
-          ${item.youtubeUrl ? `<iframe width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/${item.youtubeUrl.match(/(?:youtu\.be\/|v=|\/embed\/)([^?&]+)/)?.[1] || ''}" style="border-radius:4px"></iframe>` : item.soundcloudUrl ? `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(item.soundcloudUrl)}&color=%23c9a84c&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>` : ''}`;
+          ${item.youtubeUrl ? `<iframe width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/${item.youtubeUrl.match(/(?:youtu\.be\/|v=|\/embed\/|\/live\/)([^?&]+)/)?.[1] || ''}" style="border-radius:4px"></iframe>` : item.soundcloudUrl ? `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(item.soundcloudUrl)}&color=%23c9a84c&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>` : ''}`;
         liveSection.appendChild(el);
       });
       grid.appendChild(liveSection);
@@ -408,7 +408,7 @@
         el.className = 'music-embed fade-in';
         el.innerHTML = `
           <h4 class="music-embed__title">${esc(item.title)}</h4>
-          ${item.youtubeUrl ? `<iframe width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/${item.youtubeUrl.match(/(?:youtu\.be\/|v=|\/embed\/)([^?&]+)/)?.[1] || ''}" style="border-radius:4px"></iframe>` : item.soundcloudUrl ? `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(item.soundcloudUrl)}&color=%23c9a84c&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>` : ''}`;
+          ${item.youtubeUrl ? `<iframe width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/${item.youtubeUrl.match(/(?:youtu\.be\/|v=|\/embed\/|\/live\/)([^?&]+)/)?.[1] || ''}" style="border-radius:4px"></iframe>` : item.soundcloudUrl ? `<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(item.soundcloudUrl)}&color=%23c9a84c&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>` : ''}`;
         radioSection.appendChild(el);
       });
       grid.appendChild(radioSection);

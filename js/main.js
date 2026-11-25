@@ -37,7 +37,7 @@
 
   function getPageFromHash() {
     const hash = location.hash.replace('#', '') || 'home';
-    const valid = ['home', 'cave-primitive', 'sculptures', 'performance', 'music', 'email'];
+    const valid = ['home', 'cave-primitive', 'sculptures', 'performance', 'music', 'video', 'essay'];
     return valid.includes(hash) ? hash : 'home';
   }
 
@@ -145,7 +145,8 @@
     renderSculptures();
     renderPerformance();
     renderMusic();
-    renderEmail();
+    renderVideo();
+    renderEssay();
     renderFooter();
     updateNavLabels();
   }
@@ -499,31 +500,50 @@
     observeFadeIns();
   }
 
-  // ── Email (ex Contacts) ──
-  function renderEmail() {
-    const data = content.about;
-    const social = content.site.socialLinks || {};
+  // ── Video ──
+  function renderVideo() {
+    const data = content.video;
+    if (!data) return;
     const navData = content.nav[lang] || content.nav.it;
-    $('#emailTitle').textContent = navData.email || 'Email';
+    $('#videoTitle').textContent = navData.video || 'Video';
 
-    const wrap = $('#emailContent');
-    let html = '<div class="contacts__grid">';
+    const wrap = $('#videoList');
+    if (!data.items || data.items.length === 0) {
+      wrap.innerHTML = '';
+      return;
+    }
 
-    html += '<div class="contacts__block">';
-    html += `<h3>${lang === 'it' ? 'Contatto' : 'Contact'}</h3>`;
-    if (data.contact && data.contact.email) html += `<a href="mailto:${esc(data.contact.email)}">${esc(data.contact.email)}</a>`;
-    if (data.contact && data.contact.website) html += `<a href="${esc(data.contact.website)}" target="_blank" rel="noopener">${esc(data.contact.website)}</a>`;
-    html += '</div>';
+    wrap.innerHTML = data.items.map((item) => {
+      const isYouTube = item.url && item.url.includes('youtube.com/watch');
+      const ytId = isYouTube ? (item.url.match(/v=([^&]+)/)?.[1] || '') : '';
+      return `<div class="video-card fade-in">
+        ${isYouTube ? `<div class="video-card__embed"><iframe width="100%" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/${ytId}" style="border-radius:4px"></iframe></div>` : ''}
+        <div class="video-card__info">
+          <h3 class="video-card__title"><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>
+          ${item.author ? `<p class="video-card__author">${esc(item.author)}${item.year ? ' — ' + esc(item.year) : ''}</p>` : ''}
+          <p class="video-card__desc">${esc(t(item.description))}</p>
+        </div>
+      </div>`;
+    }).join('');
+    observeFadeIns();
+  }
 
-    html += '<div class="contacts__block">';
-    html += `<h3>${lang === 'it' ? 'Social & Musica' : 'Social & Music'}</h3>`;
-    if (data.contact && data.contact.instagram) html += `<a href="${esc(data.contact.instagram)}" target="_blank" rel="noopener">Instagram</a>`;
-    if (social.bandcamp) html += `<a href="${esc(social.bandcamp)}" target="_blank" rel="noopener">Bandcamp</a>`;
-    if (social.soundcloud) html += `<a href="${esc(social.soundcloud)}" target="_blank" rel="noopener">SoundCloud</a>`;
-    html += '</div>';
+  // ── Essay ──
+  function renderEssay() {
+    const data = content.essay;
+    if (!data) return;
+    const navData = content.nav[lang] || content.nav.it;
+    $('#essayTitle').textContent = navData.essay || 'Essay';
 
-    html += '</div>';
-    wrap.innerHTML = html;
+    const wrap = $('#essayContent');
+    wrap.innerHTML = `
+      <div class="essay-card">
+        <h3 class="essay-card__title">${esc(t(data.title))}</h3>
+        <div class="essay-card__embed">
+          <iframe src="${esc(data.file)}" width="100%" height="600" style="border:none;border-radius:4px"></iframe>
+        </div>
+        <a href="${esc(data.file)}" target="_blank" class="btn essay-card__download">${lang === 'it' ? 'Scarica PDF' : 'Download PDF'}</a>
+      </div>`;
   }
 
   // ── Footer ──
@@ -535,6 +555,10 @@
     if (social.bandcamp) links.innerHTML += `<a href="${esc(social.bandcamp)}" target="_blank" rel="noopener">Bandcamp</a>`;
     if (social.soundcloud) links.innerHTML += `<a href="${esc(social.soundcloud)}" target="_blank" rel="noopener">SoundCloud</a>`;
     if (social.instagram) links.innerHTML += `<a href="${esc(social.instagram)}" target="_blank" rel="noopener">Instagram</a>`;
+    const contactEl = $('#footerContact');
+    if (contactEl && social.email) {
+      contactEl.innerHTML = `<p class="footer__email">${lang === 'it' ? 'Contattami' : 'Contact me'}: <a href="mailto:${esc(social.email)}">${esc(social.email)}</a></p>`;
+    }
   }
 
   // ── Background Music ──

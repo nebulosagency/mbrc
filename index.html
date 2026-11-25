@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maurice Bellanova | R A G A Z Z A C L A N</title>
   <meta name="description" content="Portfolio artistico — scultura, performance, musica">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; frame-src https://w.soundcloud.com https://bandcamp.com https://*.bandcamp.com">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; frame-src 'self' https://w.soundcloud.com https://bandcamp.com https://*.bandcamp.com https://www.youtube.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
@@ -23,7 +23,8 @@
       <li><a href="#sculptures" data-nav="sculptures">Sculture</a></li>
       <li><a href="#performance" data-nav="performance">Performance</a></li>
       <li><a href="#music" data-nav="music">Musica</a></li>
-      <li><a href="#email" data-nav="email">Email</a></li>
+      <li><a href="#video" data-nav="video">Video</a></li>
+      <li><a href="#essay" data-nav="essay">Saggio</a></li>
     </ul>
     <div class="nav__actions">
       <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
@@ -44,7 +45,8 @@
         <li><a href="#sculptures" data-nav="sculptures">Sculture</a></li>
         <li><a href="#performance" data-nav="performance">Performance</a></li>
         <li><a href="#music" data-nav="music">Musica</a></li>
-        <li><a href="#email" data-nav="email">Email</a></li>
+        <li><a href="#video" data-nav="video">Video</a></li>
+        <li><a href="#essay" data-nav="essay">Saggio</a></li>
       </ul>
     </div>
   </div>
@@ -135,13 +137,23 @@
     </section>
   </div>
 
-  <!-- ============ PAGE: EMAIL ============ -->
-  <div class="page" id="page-email">
+  <!-- ============ PAGE: VIDEO ============ -->
+  <div class="page" id="page-video">
     <div class="page__hero-bar">
-      <h2 class="page__title" id="emailTitle"></h2>
+      <h2 class="page__title" id="videoTitle"></h2>
     </div>
     <section class="section">
-      <div class="contacts__content" id="emailContent"></div>
+      <div class="video-list" id="videoList"></div>
+    </section>
+  </div>
+
+  <!-- ============ PAGE: ESSAY ============ -->
+  <div class="page" id="page-essay">
+    <div class="page__hero-bar">
+      <h2 class="page__title" id="essayTitle"></h2>
+    </div>
+    <section class="section">
+      <div class="essay__content" id="essayContent"></div>
     </section>
   </div>
 
@@ -153,6 +165,7 @@
         <p class="footer__agency">&copy; 2026 website by <a href="https://nebulosagency.com" target="_blank" rel="noopener">Nebulos Agency</a></p>
       </div>
       <div class="footer__links" id="footerLinks"></div>
+      <div class="footer__contact" id="footerContact"></div>
     </div>
   </footer>
 

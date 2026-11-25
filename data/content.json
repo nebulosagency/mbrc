@@ -22,7 +22,8 @@
       "sculptures": "Sculture",
       "performance": "Performance",
       "music": "Musica",
-      "email": "Email"
+      "video": "Video",
+      "essay": "Saggio"
     },
     "en": {
       "home": "Home",
@@ -30,7 +31,8 @@
       "sculptures": "Sculptures",
       "performance": "Performance",
       "music": "Music",
-      "email": "Email"
+      "video": "Video",
+      "essay": "Essay"
     }
   },
   "hero": {
@@ -526,6 +528,51 @@
       "instagram": "https://instagram.com/ragazzaclan",
       "website": ""
     }
+  },
+  "video": {
+    "sectionTitle": {
+      "it": "Video",
+      "en": "Video"
+    },
+    "sectionDescription": {
+      "it": "",
+      "en": ""
+    },
+    "items": [
+      {
+        "id": "cordo",
+        "title": "Cordo",
+        "author": "Gianluca Laneve",
+        "year": "2024",
+        "description": {
+          "it": "RAGAZZACLAN — un film di Gianluca Laneve",
+          "en": "RAGAZZACLAN — a film by Gianluca Laneve"
+        },
+        "url": "https://www.gianlucalaneve.com/projects/ragazzaclan"
+      },
+      {
+        "id": "per-praticare-il-non-utile",
+        "title": "Per praticare il non utile",
+        "author": "",
+        "year": "",
+        "description": {
+          "it": "Monastero, Bari",
+          "en": "Monastery, Bari"
+        },
+        "url": "https://www.youtube.com/watch?v=Qz0r_qeKkSU"
+      }
+    ]
+  },
+  "essay": {
+    "sectionTitle": {
+      "it": "Saggio",
+      "en": "Essay"
+    },
+    "title": {
+      "it": "La comunicazione nell'era digitale",
+      "en": "Communication in the digital age"
+    },
+    "file": "multimedia/La_comunicazione_nell_era_digitale_saggio.pdf"
   },
   "theme": {
     "colors": {
